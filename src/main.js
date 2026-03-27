@@ -130,9 +130,11 @@ async function onLoadMoreClick() {
 function smoothScroll() {
   const firstCard = document.querySelector('.gallery-item');
   if (!firstCard) return;
+
   const cardHeight = firstCard.getBoundingClientRect().height;
+
   window.scrollBy({
-    top: cardHeight * 5,
+    top: cardHeight * 2,
     behavior: 'smooth',
   });
 }

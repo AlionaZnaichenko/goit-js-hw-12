@@ -61,7 +61,7 @@ export function createGallery(images) {
     </li>`;
   }
 
-  galleryList.insertAdjacentHTML('beforeEnd', markup);
+  galleryList.insertAdjacentHTML('beforeend', markup);
   lightBox.refresh();
 }
 
